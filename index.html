@@ -21,7 +21,8 @@
       href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-
+    <!---------aos animation Links-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>WoodPassion</title>
   </head>
   <body>
@@ -44,7 +45,7 @@
     </header>
     <!---------Hero Section-->
     <section class="home" id="home">
-      <div class="home-text">
+      <div class="home-text" data-aos="fade-up" data-aos-duration="1400">
         <h4>Carving Art</h4>
         <h1>
           Bringing <br />
@@ -55,24 +56,47 @@
           natural beauty and versatility of wood
         </p>
       </div>
-      <div class="home-img">
+      <div class="home-img" data-aos="zoom-in" data-aos-duration="1400">
         <img src="./assets/img/hero.png" alt="" />
       </div>
       <div class="social">
-        <a href="#"><i class="ri-facebook-fill"></i></a>
-        <a href="#"><i class="ri-instagram-line"></i></a>
-        <a href="#"><i class="ri-dribbble-line"></i></a>
+        <a
+          href="#"
+          data-aos="fade-in"
+          data-aos-duration="1400"
+          data-aos-delay="200"
+          ><i class="ri-facebook-fill"></i
+        ></a>
+        <a
+          href="#"
+          data-aos="fade-in"
+          data-aos-duration="1400"
+          data-aos-delay="300"
+          ><i class="ri-instagram-line"></i
+        ></a>
+        <a
+          href="#"
+          data-aos="fade-in"
+          data-aos-duration="1400"
+          data-aos-delay="400"
+          ><i class="ri-dribbble-line"></i
+        ></a>
       </div>
-      <div class="arrow-box">
+      <div
+        class="arrow-box"
+        data-aos="zoom-in-left"
+        data-aos-duration="1400"
+        data-aos-delay="200"
+      >
         <a href="#about"><i class="ri-arrow-down-line"></i></a>
       </div>
     </section>
     <!---------About Section-->
     <section class="about" id="about">
-      <div class="about-img">
+      <div class="about-img" data-aos="zoom-in" data-aos-duration="1400">
         <img src="./assets/img/about.png" alt="" />
       </div>
-      <div class="about-text">
+      <div class="about-text" data-aos="fade-up" data-aos-duration="1400">
         <h2>
           Wood is my <br />
           Passion
@@ -94,7 +118,12 @@
     </section>
     <!---------Shop-->
     <section class="shop" id="shop">
-      <div class="head-text">
+      <div
+        class="head-text"
+        data-aos="fade-up"
+        data-aos-duration="1400"
+        data-aos-delay="200"
+      >
         <div class="head-left">
           <h4>Best Selling</h4>
         </div>
@@ -102,7 +131,12 @@
           <h4>Offer up to 50%</h4>
         </div>
       </div>
-      <div class="shop-content">
+      <div
+        class="shop-content"
+        data-aos="fade-up"
+        data-aos-duration="1400"
+        data-aos-delay="300"
+      >
         <div class="box">
           <div class="box-img">
             <img src="./assets/img/s1.png" alt="" />
@@ -137,7 +171,12 @@
     </section>
     <!---------exhibition-->
     <section class="exhibitions" id="exhibitions">
-      <div class="head-text">
+      <div
+        class="head-text"
+        data-aos="fade-up"
+        data-aos-duration="1400"
+        data-aos-delay="300"
+      >
         <div class="head-left">
           <h4>Exhibitions</h4>
         </div>
@@ -146,10 +185,15 @@
         </div>
       </div>
       <div class="exb-content">
-        <div class="exb-img">
+        <div class="exb-img" data-aos="zoom-in" data-aos-duration="1400">
           <img src="./assets/img/exb.png" alt="" />
         </div>
-        <div class="exb-text">
+        <div
+          class="exb-text"
+          data-aos="fade-up"
+          data-aos-duration="1400"
+          data-aos-delay="300"
+        >
           <div class="row">
             <h5>Wisper in Wood: An exploration of Nature's Beauty.</h5>
             <a href="#" class="">22 March 2024 -25 March 2024</a>
@@ -175,7 +219,12 @@
     </section>
     <!---------Contact-->
     <section class="contact" id="contact">
-      <div class="contact-content">
+      <div
+        class="contact-content"
+        data-aos="fade-up"
+        data-aos-duration="1400"
+        data-aos-delay="400"
+      >
         <h2>Let's Talk</h2>
         <hr />
         <p>8500 Lorem street, chichago, IL 53200</p>
@@ -199,5 +248,11 @@
     </div>
     <!---------Js Link-->
     <script src="./assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 1,
+      });
+    </script>
   </body>
 </html>
